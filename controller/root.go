@@ -6,11 +6,11 @@ import (
 )
 
 func RootController(r *gin.Engine) {
-	r.POST("/", func(c *gin.Context) {
+	r.GET("/", func(c *gin.Context) {
 		services.GetImage(c)
 	})
 
-	r.GET("/", func(c *gin.Context) {
+	r.POST("/", func(c *gin.Context) {
 
 	})
 }
